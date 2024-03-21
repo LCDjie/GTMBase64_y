@@ -4,7 +4,7 @@ Pod::Spec.new do |s|
     s.summary      = 'ios GTMBase64_y install by cocoapods'
     s.homepage     = 'https://github.com/LCDjie/GTMBase64_y'
     s.license      = 'MIT'
-    s.authors      = {'lbxia' => '1354427076@qq.com'}
+    s.authors      = {'LCDjie' => '1354427076@qq.com'}
     s.ios.deployment_target = '6.0'
     s.osx.deployment_target = '10.7'
     s.watchos.deployment_target = '2.0'
