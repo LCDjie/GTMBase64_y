@@ -9,7 +9,7 @@ Pod::Spec.new do |s|
     s.osx.deployment_target = '10.7'
     s.watchos.deployment_target = '2.0'
     s.tvos.deployment_target = '9.0'
-    s.source       = {:git => 'https://github.com/LCDjie/GTMBase64_y.git', :tag => s.version}
+    s.source       = {:git => 'https://github.com/LCDjie/GTMBase64_y.git'}
     s.source_files = 'GTMBase64/*.{h,m}'    
     s.requires_arc = true    
 end
