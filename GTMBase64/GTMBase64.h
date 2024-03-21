@@ -80,6 +80,9 @@
 //
 +(NSString *)stringByEncodingData:(NSData *)data;
 
++(NSString *)stringByEncodingDataNoPadded:(NSData *)data;
+
+
 // stringByEncodingBytes:length:
 //
 /// Base64 encodes the data pointed at by |bytes|.
