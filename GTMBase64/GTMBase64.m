@@ -288,6 +288,18 @@ GTM_INLINE NSUInteger GuessDecodedLength(NSUInteger srcLen) {
     }
     return result;
 }
++(NSString *)stringByEncodingDataNoPadded:(NSData *)data {
+    NSString *result = nil;
+    NSData *converted = [self baseEncode:[data bytes]
+                                  length:[data length]
+                                 charset:kBase64EncodeChars
+                                  padded:NO];
+    if (converted) {
+        result = [[NSString alloc] initWithData:converted
+                                        encoding:NSASCIIStringEncoding] ;
+    }
+    return result;
+}
 
 +(NSString *)stringByEncodingBytes:(const void *)bytes length:(NSUInteger)length {
     NSString *result = nil;
